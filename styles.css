@@ -1,0 +1,196 @@
+body{
+    background-color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+}
+
+/* Centered Sections */
+#about, #location, #food, #times, #party, #contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5% auto;
+    max-width: 80%;
+    background-color: grey;
+    border: 3px solid white;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+
+/*Header section*/
+
+#header{
+    display: flex;
+    flex-flow: column;
+    border-top: 3px solid white;
+    border-bottom: 3px solid white;
+    font-size: 2rem;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-title{
+    color: white;
+    text-decoration: underline;
+
+    
+}
+
+.subtitle{
+    color: white;
+    text-decoration: underline;
+}
+
+
+
+/*Navigation Section*/
+
+#navbar {
+    border-bottom: 3px solid white;
+    background-color: #333;  
+    width: 100%;
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5%;
+
+}
+
+#navbar li{
+    display: inline-flex;
+    list-style-type: none;
+    margin-right: 15px;
+    color: white;
+    font-size: 2em;  
+}
+
+#navbar a{
+    padding: 5px 10px; 
+    color: white; 
+}
+
+#navbar a:hover{
+    color: gray;
+}
+
+/*About Section*/
+
+
+.about-text h2{
+    text-align: center;
+    color: black;
+    text-decoration: underline;
+    
+}
+
+.about-text p{
+    text-align: left;
+    font-size: 1.5rem;
+    color: black;  
+}
+
+/*Images*/
+
+#images{
+    display: flex;
+    justify-content: center;
+}
+
+.image1, .image2, .image3, .image4, .image5 {
+    width: 50%;
+}
+
+
+/*Location Section*/
+
+.location-text h2{
+    text-align: center;
+    color: black;
+    text-decoration: underline;
+}
+
+.location-text p{
+    text-align: left;
+    font-size: 1.5rem;
+    color: black;  
+}
+
+/*Food Section*/
+
+.food-text h2{
+    text-align: center;
+    color: black;
+    text-decoration: underline;
+}
+
+.food-text p{
+    text-align: left;
+    font-size: 1.5rem;
+    color: black;  
+}
+
+/*Opening Times*/
+
+
+.times-text h2{
+    text-align: center;
+    color: black;
+    text-decoration: underline;
+}
+
+.times-text p{
+    text-align: left;
+    font-size: 1.5rem;
+    color: black;  
+}
+
+/*Theme Parties Section*/
+
+
+.party-text h2{
+    text-align: center;
+    color: black;
+    text-decoration: underline;
+}
+
+.party-text p{
+    text-align: left;
+    font-size: 1.5rem;
+    color: black;  
+}
+
+/*Footer Section*/
+
+
+#contact h4{
+    text-decoration: underline;
+}
+
+
+
+/* Media Queries for responsive design */
+
+/* For screens up to 768px wide (typical for tablets) */
+@media (max-width: 768px) {
+    #about, #location, #food, #times, #party, #contact {
+        max-width: 90%;
+    }
+    .image1, .image2, .image3, .image4, .image5 {
+        width: 80%;
+    }
+}
+
+/* For screens up to 480px wide (typical for smartphones) */
+@media (max-width: 480px) {
+    #about, #location, #food, #times, #party, #contact {
+        max-width: 95%;
+    }
+    .image1, .image2, .image3, .image4, .image5 {
+        width: 100%;
+    }
+    .navbar li {
+        font-size: 1.5em;
+    }
+}
